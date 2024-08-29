@@ -1,0 +1,45 @@
+#!/bin/bash
+
+echo "welcome to uma"
+uname -a 
+a=3
+num=15
+
+## if else
+if [ "$a" > 4 ]; then
+echo "print greater than 5"
+else
+echo "print lesser than 5"
+fi
+######################################################
+###Else if 
+if [ "$num" > 100 ];  
+then  
+echo "Eligible for 10% discount"  
+elif [ "$num" < 100 ];  
+then  
+echo "Eligible for 5% discount"  
+else  
+echo "Lucky Draw Winner"  
+echo "Eligible to get the item for free"  
+fi  
+#########################################################################################
+input=chair
+#####Case 
+case $input in  
+    apple)  
+         echo "the item is fruit"   
+        ;;  
+    tomato)  
+        echo "the item is vegetable" 
+        ;;  
+    chair|desk|table)  
+        statements  
+        ;;  
+    help)  
+        echo "Please provide apple|tomato|chair|desk|table as input"   
+        ;;  
+    *)  
+        statements  
+        ;;  
+esac  
